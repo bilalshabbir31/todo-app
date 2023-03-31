@@ -1,18 +1,19 @@
 
 function ListGroup() {
 
-    const items=[
+    let items=[
         'Mian Channu',
         'Lahore',
         'Okara',
         'Sahiwal'
     ];
 
-
+    items=[]
 
     return (
         <>
-        <h1>Hello Bilal</h1>
+        <h1>List</h1>
+        {items.length===0    && <p>No Item Found</p>}
         <ul className="list-group">
             {items.map(item=><li key={item}>{item}</li>)}
         </ul>
